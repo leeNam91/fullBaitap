@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+body >div >p{
+    margin: 40px;
+
+}
+.content1{
+    border: 2px solid #000;
+    width: 300px;
+    margin: auto;
+}
+.content1-img{
+    position: relative;
+}
+.content1-img img{
+    width: 100%;
+}
+.content1-img p{
+    position: absolute;
+    bottom: 0;
+    background-color: burlywood;
+}
+.content1-info p:first-child{
+    text-decoration: line-through;
+}
+.content1-info p:last-child{
+    color: red;
+    margin-top: 20px;
+}
+.content2{
+    border: 2px solid#ccc   ;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+.content2 img{
+    width: 100%;
+    margin-top: 20px;
+}
+.sub-hot{
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    padding: 0 4px;
+    border-left: 2px solid green;
+    color: #fff;
+}
+.sub-discount{
+    position: absolute;
+    background-color: green;
+    top: 0;
+    right: 0;
+    padding: 0 4px;
+    color: #fff;
+}
+.itemInfo{
+    text-align: center;
+    font-size: 18px;
+}
+
+.itemPrice{
+    color: red;
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 600;
+}
+.itemNewPrice{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+}
+.container3{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #000;
+}
+.content3{
+    width: 200px;
+    position: relative;
+    margin: 20px 0;
+}
+.content3 i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    background-color: blue;
+    border-radius: 5px;
+    color: #fff;
+}
+.containter4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.content4-detail{
+    display: flex;
+    border-bottom: 1px solid #ccc ;
+    margin: 0 10px;
+    padding: 10px;
+}
+.content4-detail img{
+    width: 50px;
+}

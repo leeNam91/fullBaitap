@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.nav >div{
+    display: flex;
+    align-items: center;
+}
+.nav1,
+.nav2{
+    display: flex;
+    align-items: center;
+}
+.nav img{
+    height: 42px;
+    bottom: 50%;
+    padding-right: 20px;
+}
+.nav1 li,
+.nav2 li{
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav1 li{
+    line-height: 75px;
+}
+.nav1 li i{
+    transform: translateY(-20%);
+    margin-left: 5px;
+}
+.nav1 span,
+.nav2 span{
+    padding: 2px 5px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+}
+.nav2 li{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 150px;
+    margin: 0 10px;
+    text-align: center;
+}
+.nav2 li:first-child{
+    background-color: #FFC0C7;
+}
+.nav2 li:last-child{
+    background-color: rgb(4, 170, 109);
+    color: #fff;
+}
+.nav2 li:hover,
+.nav1 li:hover{
+    background-color: #059862;
+    color: #fff ;
+}
+.nav2 li:first-child:hover span{
+    background-color: #fff;
+    color: #000;
+}
+.subnav{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: #282A35;
+}
+.subnav1,
+.subnav2{
+    display: flex;
+    color: #fff;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+.subnav1 i{
+    cursor: pointer;
+}
+.subnav1 li,
+.subnav2 li{
+    padding: 0 20px;
+    cursor: pointer;
+}
+.subnav1 li:hover,
+.subnav2 li:hover{
+    background-color: #000;
+}

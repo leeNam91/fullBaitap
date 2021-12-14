@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #4daf54, #3d8880)
+}
+.contain{
+    width: 320px;
+    height: 400px;
+    background-color: #272d40;
+    margin: 120px auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.itemImg{
+    padding: 10px 10px 10px 0;
+    transition: 0.5s;
+}
+.contain:hover .itemImg{
+    transform: translateY(-90px) rotate(-25deg);
+}
+.itemImg img{
+    width: 100%;
+}
+.itemPrice{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.itemPrice p:first-child{
+    color: #419176;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.itemPrice p:last-child{
+    transition: 0.5s;
+}
+.contain:hover .itemPrice p:first-child{
+    transform: translateY(-80px) translateX(-42px);
+}
+.contain:hover .itemPrice p:last-child{
+    transform: translateY(-80px) translateX(-116px);
+}
+.itemChose{
+    position: absolute;
+    bottom: 20px;
+    display: none;
+    animation: floatin 0.4s ease;
+}
+.itemChose >div{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.itemSize,
+.itemColor{
+    display: flex;
+}
+.itemSize p{
+    margin-right: 10px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: #dadada;
+    color: #272d40;
+    cursor: pointer;
+}
+.itemSize p:first-child{
+    color: #fff;
+    background-color: transparent;
+    padding: unset;
+    cursor: text;
+}
+.itemColor div{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.itemColor div:nth-child(2){
+    background-color: green;
+}
+.itemColor div:nth-child(3){
+    background-color: red;
+}
+.itemColor div:nth-child(4){
+    background-color: black;
+}
+.sold span{
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #419176;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1);
+    display: inline-block;
+}
+.sold span:hover{
+    transform: scale(0.9);
+}
+.contain:hover .itemChose{
+    display: block;
+}
+@keyframes floatin {
+    0%{
+        opacity: 0 ;
+        bottom: -150px;
+    }
+}

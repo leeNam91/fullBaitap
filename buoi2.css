@@ -1,0 +1,127 @@
+body{
+    margin-left: 5rem;
+}
+.ex{
+    margin-top: 5rem;
+}
+.ex-num{
+    font-size: 18px;
+    font-weight: 700;
+}
+.login{
+    width: 20rem;  
+}
+.login h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.login label{
+    margin: 10px 0 10px;
+    display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.login input{
+    width: 100%;
+    padding: 10px 0;
+}
+.signup{
+    margin: 20px 0;
+}
+.signup span{
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+}
+.signup a{
+    text-decoration: none;
+    color: #3597ff;
+}
+.login-btn{
+    width: 100%;
+    background-color: #007dff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: #00ff0d;
+}
+.login h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.login-fb-btn{
+    width: 100%;
+    background-color: #266fa4;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login-fb-btn:hover{
+    background-color: #3326a4;
+}
+.ex2 h3{
+    text-align: center;
+    font-size: 25px;
+    color: #00ffff;
+}
+.text1{
+    text-decoration: underline solid #000;
+    font-weight: 800;
+}
+.text2{
+    color: #ff0000;
+}
+.text3{
+    color:#79aede;
+}
+.text4{
+    color: #ff0000;
+}
+.big-size{
+    font-size: 30px;
+}
+.ex4 ul{
+    list-style: none;
+    padding: 0;
+}
+.list{
+    width: 250px;
+}
+.list li:hover .sub-list{
+    display: block;
+}
+.list li{
+    background-color: #aad862;
+    padding: 10px 50px;
+    border-top: 1px solid #78b43d;
+    position: relative;
+}
+.list >li:first-child{
+    color: #fff;
+}
+.list >li::after{
+    content: "";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #000;
+    left: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+.sub-list{
+    display: none;
+    position: absolute;
+    left: 250px;
+    width: 250px;
+    top: -1px;
+}
+.sub-list >li{
+    border-top: 1px solid #aad862;
+    background-color: #78b43d;
+    color: #000;
+}

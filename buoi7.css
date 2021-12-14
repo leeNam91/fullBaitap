@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 18px;
+}
+.grid{
+    max-width: 1060px;
+    border-bottom: 1px solid #eee ;
+    padding: 100px 0;
+    margin: auto;
+}
+.headerText{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 10px 0 ;
+}
+.introText{
+    letter-spacing: 5px;
+    margin: 50px 0 20px !important;
+}
+.opaText{
+    color: #757575;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow:  0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%) ;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+.leftHeader{
+    padding: 8px 16px ;
+    cursor: pointer;
+}
+.leftHeader:hover{
+    background-color: #ccc;
+}
+.rightHeader{
+    display: flex;
+    cursor: pointer;
+}
+.rightHeader p{
+    padding: 8px 16px;
+}
+.rightHeader p:hover{
+    background-color: #ccc;
+}
+.mainPic{
+    position: relative;
+}
+.mainPic img{
+    max-width: 100%;
+}
+.mainPic p{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    font-size: 34px;
+    color: #757575;
+    letter-spacing: 5px;
+}
+.aboutCatering .grid,
+.ourMenu .grid{
+    display: flex;
+}
+.cateringPic,
+.cateringInfo,
+.menuInfo,
+.menuPic{
+    flex: 1 ;
+    padding: 12px 24px;
+}
+.cateringPic img,
+.menuPic img{
+    max-width: 100%;
+    opacity: 0.7;
+}
+.cateringInfo p{
+    margin: 18px 0;
+}
+.cateringInfo .introText{
+    text-align: center;
+}
+.contact .grid{
+    padding: 100px 30px;
+}
+.contact h3{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.contact p{
+    font-size: 16px;
+    margin: 15px 0;
+}
+.contact span{
+    font-size: 18px;
+    color: #607d8b;
+    font-weight: 700;
+}
+.contact input{
+    padding: 16px 8px;
+    border: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    width: 100%;
+    outline: none;
+    margin-bottom: 15px;
+}
+.contact input:focus-visible{
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+.button{
+    color: #000;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+.button:hover{
+    background-color: #ccc;
+}
+footer{
+    padding: 32px 0;
+    background-color: #f1f1f1;
+}
+footer p{
+    text-align: center;
+    margin: 15px 0;
+}
+@media screen and (max-width: 768px) {
+    .ourMenu .grid {
+        flex-direction: column;
+    }
+    .menuPic img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px){
+    .menuPic img{
+        width: 100%;
+    }
+    .cateringPic {
+        display: none;
+    }
+}
